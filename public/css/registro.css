@@ -1,0 +1,121 @@
+form {
+    background-color: #ebebeb;
+    border-radius: 15px;
+    width: 100vw;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 10px 10px;
+}
+
+.input-decoration{
+    align-self: center;
+    display: block;
+    width: 80%;
+    max-width: 80%;
+    margin: 10px 0;
+    height: 30px;
+    border-radius: 5px;
+    border: #fff solid 2px;
+}
+
+.buttons-decoration{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+.buttons-decoration button{
+    margin: 10px auto;
+    border-radius: 8px;
+    border: #fff solid 2px;
+    width: 100%;
+    background-color: #1259c3;
+    color: #fff;
+}
+
+.label-decoration{
+    text-align: start;
+    width: 80%;
+}
+
+.label-container-checkbox{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.label-container-radio{
+    display: flex;
+    flex-direction: column;
+}
+
+.separar-radio{
+    margin: 5px 0;
+}
+
+.label-container-checkbox div{
+    margin: 5px 0;
+}
+
+
+.date{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 15px auto;
+    width: 80%;
+    border-radius: 8px;
+
+}
+
+.photouser{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.photouser input{
+    width: 100%;
+}
+
+.text-decoration{
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+form h1{
+    width: 80%;
+    font-size: 1.6rem;
+    margin: auto;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    form{
+        width: 80vw;
+    }
+    .label-container-radio{
+        flex-direction: row;
+    }
+
+    .separar-radio{
+        margin: 0 10px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+   form{width: 30vw;}
+   .label-container-radio{
+    flex-direction: row;
+    }
+
+}
+

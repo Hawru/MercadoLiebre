@@ -1,0 +1,49 @@
+form {
+    background-color: #ebebeb;
+    width: 100vw;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 500px;
+    padding: 10px 10px;
+}
+
+form input{
+    align-self: center;
+    display: block;
+    width: 80%;
+    max-width: 80%;
+    margin: 20px 0;
+    height: 30px;
+    border-radius: 5px;
+    border: #fff solid 2px;
+}
+
+form button{
+    background-color: #1259c3;
+    width: 80%;
+    border-radius: 5px;
+    border: #1259c3 solid 2px;
+    color: #fff;
+    height: 30px;
+    margin: 20px 0 10px 0;
+    transition: all 500ms;
+
+}
+
+form button:hover{
+    background-color: #0022AA;
+}
+
+@media screen and (min-width: 600px) {
+    form{width: 80vw; margin-top: 20px; border-radius: 10px; border: #fff solid 2px;}
+    
+
+}
+
+@media screen and (min-width: 992px) {
+   form{width: 30vw;}
+}

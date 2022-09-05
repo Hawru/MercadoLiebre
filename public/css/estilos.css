@@ -1,0 +1,321 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto';
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    background-color: #EAC926;
+    text-align: center;
+}
+
+.header-container{
+    max-width: 1280px;
+    margin: auto
+}
+
+a{text-decoration: none; color: #111111;}
+ul{list-style: none; padding: 0;}
+.container-section-main h2{font-size: 24px;}
+
+
+.barra-navegacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.container-principal{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    display: block;
+    width: 50%;
+    max-width: 200px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.barra{
+    width: 50%;
+}
+
+.md-a{
+    margin-top: 10px;
+}
+
+.barra-navegacion{
+    display: none;
+}
+
+
+.hamburguer{
+    margin: 10px 0;
+    background-color: #03264C;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.banner{
+    width: 100vw;
+    height: 20vh;
+}
+
+.container-main {
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+section img{
+    width: 100%;
+}
+
+
+.informacion{
+    text-align: start;
+    width: 100%;
+    margin: auto;
+    font-weight: 800;
+    padding-left: 10%;
+    border-top: solid 2px #ebebeb;
+}
+
+.precio-descuento{
+    display: flex;
+    margin-top: 0;
+}
+
+.descuento{
+    margin-left: 20px;
+}
+
+.icono{
+    display: inline;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    position: relative;
+    left: 80%;
+    top: -10px;
+}
+
+
+.informacion h5{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.verde{
+    color: #39b54a;
+}
+
+main h2{
+    margin-top: 50px;
+}
+
+main article{
+    background-color: #fafafa;
+    border: solid 10px #ebebeb;
+    margin-top: 5px;
+}
+
+.container{
+    text-align: center;
+    width: 90vw;
+    margin: 100px auto 0 auto;
+}
+
+.container i{
+    display: block;
+    color: #1259c3;
+    margin: auto;
+    font-size: 25px;
+    transition: color 800ms;
+}
+
+
+
+.copyright{
+    display: block;
+    font-size: 1.2rem;
+    text-align: start;
+    margin-bottom: 0%;
+    margin-top: 40px;
+}
+
+/* Transition - Animation - transform*/
+section h5{
+    visibility: hidden;
+}
+
+article:hover h5{
+    visibility: visible;
+}
+
+
+article:hover .icono i{
+    transform: rotate(-90deg);
+    transition-duration: 1s;
+}
+
+.container div:hover i{
+    color: #0022AA;
+}
+
+
+
+
+@media screen and (min-width: 600px) {
+    main article{
+        box-shadow : 0px 0px 10px rgb(100, 100, 100);
+        border: none;
+    }
+    .hamburguer{
+        display: none;
+    }
+
+    .container-principal{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        width: 33%;
+    }
+    .logo img{
+        width: 100%;
+    }
+    
+    .barra{
+        width: 33%;
+    }
+    
+    .md-a{
+        margin-top: 0;
+        display: block;
+        width: 33%;
+    }
+
+    .barra-navegacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 0.8rem;
+    }
+
+    .compras, .cuenta{
+        display: flex;
+    }
+
+    .barra-navegacion li{
+        padding: 0px 8px;
+    }
+
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .principal-section{
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+        margin: 0 5%;
+    }
+
+  
+
+
+}
+
+@media screen and (min-width: 992px) {
+    main article{
+        box-shadow : 0px 0px 10px rgb(100, 100, 100);
+        border: none;
+    }
+    .hamburguer{
+        display: none;
+    }
+
+    .container-principal{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        width: 33%;
+    }
+    .logo img{
+        width: 100%;
+    }
+    
+    .barra{
+        width: 33%;
+    }
+    
+    .md-a{
+        margin-top: 0;
+        display: block;
+        width: 33%;
+    }
+
+    .barra-navegacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1.2rem;
+    }
+
+    .compras, .cuenta{
+        display: flex;
+    }
+
+    .barra-navegacion li{
+        padding: 0px 12px;
+    }
+
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .principal-section{
+        display: flex;
+        flex-wrap: wrap;
+        width: 20%;
+        margin: 0 2.5%;
+    }
+
+    .container{
+        width: 70vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container div{
+        padding: 0 10px;
+    }
+
+}
